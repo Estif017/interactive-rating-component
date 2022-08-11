@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap');
+
+:root {
+	--White: hsl(0, 0%, 100%);
+	--Light-Grey: hsl(217, 12%, 63%);
+	--Medium-Grey: hsl(216, 12%, 54%);
+	--Dark-Blue: hsl(213, 19%, 18%);
+	--Very-Dark-Blue: hsl(216, 12%, 8%);
+	--Orange: hsl(25, 97%, 53%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--Very-Dark-Blue);
+	color: var(--White);
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.container {
+	background-color: var(--Dark-Blue);
+	width: 70%;
+	padding: 1.5em 2em;
+	border-radius: 10px;
+}
+
+.rating-state header {
+	border-radius: 50%;
+	margin-bottom: 10px;
+	width: fit-content;
+}
+
+.star-icon {
+	width: 40px;
+	background-color: hsla(212, 9%, 35%, 0.8);
+	border: 1px solid var(--Dark-Blue);
+	padding: 10px;
+	border-radius: 50%;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+p {
+	color: var(--Medium-Grey);
+	margin-bottom: 10px;
+}
+
+form .buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.buttons input {
+	background-color: hsla(212, 9%, 35%, 0.8);
+	border: 1px solid var(--Dark-Blue);
+	color: var(--Light-Grey);
+	height: 50px;
+	width: 50px;
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.buttons input:hover {
+	background-color: var(--Orange);
+	cursor: pointer;
+}
+
+#clicked {
+	background-color: var(--Medium-Grey);
+	color: var(--White);
+}
+
+.submit-button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.submit-button {
+	width: 100%;
+	padding: 10px;
+	background-color: var(--Orange);
+	color: var(--White);
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+}
+.thank-you-state {
+	display: none;
+}
+
+.thank-you-state header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.thank-you-state header p {
+	color: var(--Orange);
+	background-color: hsla(212, 9%, 35%, 0.8);
+	border: 1px solid var(---Dark-Blue);
+	border-radius: 15px;
+	padding: 5px 10px;
+	margin: 20px;
+}
+.value-description {
+	text-align: center;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+	.container {
+		width: 60%;
+	}
+	p {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.container {
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.container {
+		width: 30%;
+	}
+}
